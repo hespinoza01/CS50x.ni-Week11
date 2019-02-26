@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class='no-js' lang='es'>
+	<head>
+		<meta charset='utf-8'>
+		<title>CS50x.ni Restaurant</title>
+		<meta content='Come rico en el mejor restaurante de la ciudad, servicio de primera.' name='description'>
+		<meta content='width=device-width, initial-scale=1' name='viewport'>
+		<meta data-name="image-counter" content="6">
+    <meta name="author" content="Harold Espinoza">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/flexboxgrid.css">		
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/estilos.css">
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 9]>
+		<p class='browserupgrade'>
+		Estás usando un navegador
+		<strong>desactualizado.</strong>
+		Por favor actualiza tu navegador para una mejor experiencia.
+		</p>
+		<![endif]-->
+		<div class='video-container'>
+			<video autoplay='true' height='720' loop='true' poster='videos/images/bbq.jpg' width='1280'>
+				<source src='./videos/mp4/bbq.mp4' type='video/mp4'>
+				<source src='./videos/webm/bbq.webm' type='video/webm'>
+			</video>
+		</div>
+
+		<div class='row full-height middle-xs center-xs relative up' id="home">
+			<div class='col-xs-12'>
+				<div class='box white-text'>
+					<img src='imgs/logo.png' width='200'>
+					<h1 class="dancing-script titulo no-margin">CS50x.ni Restaurant</h1>
+					<p id='is-open'><i class="glyphicon glyphicon-time"></i>Abierto ahora</p>
+				</div>
+			</div>
+			<nav class='fixed top right white-text navigation' id='navigation'>
+				<ul class='list-inline'>
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#menu">Menú</a></li>
+					<li><a href="#galeria">Galería</a></li>
+					<li><a href="#contact">Contacto</a></li>
+					<li><a href="#location">Cómo llegar</a></li>
+				</ul>
+			</nav>
+			<div class="absolute bottom black large-padding white-text full-width" id="description">
+				<div class="row middle-xs center-xs">
+					
+					<div class="col-xs-7 col-sm-6 medium white-text">
+						Atención cálida y comida preparada por artistas
+					</div>
+
+					<div class="col-sm-6 col-xs " id="stickyNavigation">
+						<div class="box">
+							<nav id="responsive-nav" class="text-right navigation">
+								<i class="glyphicon glyphicon-menu-hamburger white-text subtitle glyphicon-remove" id="menu-open"></i>
+								<ul class='list-inline'>
+									<li><a class="short" href="#">Inicio</a></li>
+									<li><a class="short" href="#">Menú</a></li>
+									<li><a class="short" href="#">Galería</a></li>
+									<li><a class="short" href="#">Contacto</a></li>
+									<li><a class="short" href="#">Cómo llegar</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="text-center" id="menu">
+
+				<div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food" style="background-image: url('imgs/food/club-sandwich-thumb.jpg');">
+					<div class="screen"><h3 class='dancing-script white-text'>Sandwich</h3></div>
+				</div>
+
+				<div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food" style="background-image: url('imgs/food/combo-thumb.jpg');">
+					<div class="screen"><h3 class='dancing-script white-text'>Combo</h3></div>
+				</div>
+
+				<div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food" style="background-image: url('imgs/food/hamburger-thumb.jpg');">
+					<div class="screen"><h3 class="dancing-script white-text">Hamburguesa</h3></div>
+				</div>
+
+				<div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food" style="background-image: url('imgs/food/hot-cakes-thumb.jpg');">
+					<div class="screen"><h3 class="dancing-script white-text">Hot Cakes</h3></div>
+				</div>
+
+				<div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food" style="background-image: url('imgs/food/panini-thumb.jpg');">
+					<div class="screen"><h3 class="dancing-script white-text">Panini</h3></div>
+				</div>
+
+				<div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food" style="background-image: url('imgs/food/papas-thumb.jpg');">
+					<div class="screen"><h3 class="dancing-script white-text">Papas</h3></div>
+				</div>
+				<div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food" style="background-image: url('imgs/food/combo-thumb.jpg');">
+					<div class="screen"><h3 class="dancing-script white-text">Combo 2</h3></div>
+				</div>
+				<div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food" style="background-image: url('imgs/food/club-sandwich-thumb.jpg');">
+					<div class="screen"><h3 class="dancing-script white-text">Sandwich2</h3></div>
+				</div>
+			
+		</div>
+
+		<div id="galeria">
+			<div class="inner">
+				<div class="gallery" style="background-image: url('imgs/food/club-sandwich.jpg');"></div>
+
+				<div class="gallery" style="background-image: url('imgs/food/combo.jpg');"></div>
+
+				<div class="gallery" style="background-image: url('imgs/food/hamburger.jpg');"></div>
+
+				<div class="gallery" style="background-image: url('imgs/food/hot-cakes.jpg');"></div>
+
+				<div class="gallery" style="background-image: url('imgs/food/panini.jpg');"></div>
+
+				<div class="gallery" style="background-image: url('imgs/food/papas.jpg');"></div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="card white black-text text-center relative">
+				<h3 class="medium slim">En <strong class="dancing-script medium">CS50x.ni Restaurant</strong> cocinar no es una profesión, es un <strong class="dancing-script medium">arte</strong></h3>
+				<p>
+					hola hola hoklads sufscubd cbdsucbducasad bcdbscbsc dcbddbcd bcyyaoe kjkjei oioe bcabca ueifef jnecbfe euahwduaw ljcvenc jcbcebcsw bnecubwibw bubweucvb jweubweucb cwlncwuwn bncuwbbasc jsabcs bsdcbscbsw bchbweebw cwufbojvr bcsdbcsw  csachbc b dshcb dbcswcbsw. bncbwycvw bcwywycvwyc bhcuwcbwy dfergfacwf.
+				</p>
+			</div>
+		</div>
+
+		<div class="black white-text full-height" id="contact">
+
+			<div class="row middle-xs full-height">
+				<div class="col-xs-12">
+					<div class="box">
+
+						<p class="text-center medium" id="info-contacto">Presiona enter para llenar el campo correspondiente y enviarnos un correo.</p>
+
+						<form action="https://formspree.io/haroldesptru@gmail.com" method="POST" id="contact-form" class="step-form">
+							
+							<div class="row center-xs">
+								<div class="col-xs-2 col-md-1 text-center">
+									<div class="box">
+
+										<script>
+											for (var i=0; i<3; i++){
+												if(i==0)
+													document.write("<div class='path-step active'><\/div>");
+												else
+													document.write("<div class='path-step'><\/div>");
+
+												document.write("<br>")
+											}
+										</script>
+
+									</div>
+								</div>
+
+								<div class="col-xs-5">
+									<div class="box">
+										<fieldset class="step input">
+											<input type="email" name="email" placeholder="example@correo.com" class="input" required="true">
+										</fieldset>
+
+										<fieldset class="step">
+											<input type="text" name="nombre" placeholder="Nombre" class="input" required="true">
+										</fieldset>
+
+										<fieldset class="step">
+											<textarea name="body" placeholder="Mensaje" class="input" required="true"></textarea>
+										</fieldset>
+
+										<!--<div>
+											<button type="submit" class="btn">Enviar</button>
+										</div>-->
+										<!--FORMSPREE un servicio para enviar correo-->
+									</div>
+								</div>
+							</div>
+
+						</form>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div id="location">
+			<div id="map"></div>
+			<div id="message" class="black large-padding white-text text-center medium">
+				Prueba
+			</div>
+		</div>
+	
+	<script src="https://code.jquery.com/jquery-3.0.0.min.js", integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=", crossorigin="anonymous"></script>
+	<script>
+	    // si no se logra cargar la libreria jQuery del dns, se carga automaticamente la libreria jQuery local
+		window.jQuery || document.write("<script src='js/vendor/jquery-3.2.1.js'><\/script>");
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=valor_de_la_clave_obtenida_de_console.developer"></script> <!--Importamos la libreria de Google maps-->
+	<script src="js/form_object.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/step.js"></script>
+	<!--<script src="js/maps.js"></script>-->
+	</body>
+</html>

@@ -1,0 +1,260 @@
+@font-face{
+	font-family: "Dancing Script";
+	src: url("fonts/DancingScript-Regular.ttf");
+}
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+html, body{
+	height: 100%;
+	width: 100%;
+}
+
+.video-container{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+}
+
+.video-container video{
+	/*cubra toda la pantalla*/
+	min-width: 100%;
+	min-height: 100%;
+
+	/*el navegador no altere la escala*/
+	width: auto;
+	height: auto;
+
+	/*Centrarlo*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	   -moz-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+}
+
+.full-height{ height: 100%; }
+
+.row{ margin: 0; }
+
+.relative{ position: relative; }
+
+.up{ z-index: 10; }
+
+.white-text{ color: #fff; }
+
+.dancing-script{ font-family: 'Dancing Script', cursive; }
+
+.titulo{ font-size: 4em; }
+
+.no-margin{ margin: 0; }
+
+.fixed{ position: fixed; }
+
+.top{ top: 1em; }
+
+.right{ right: 5em; }
+
+.navigation ul li{
+	padding: 5px 10px;
+	font-size: 1.3em;
+	cursor: pointer;
+	border-bottom: 2.5px solid rgba(255,255,255,.0);
+	transition: border .75s ease, background .75s ease; /*background .75s ease;*/
+}
+
+.navigation ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.navigation ul li:hover{
+	 background-color: rgba(255,255,255,.075);
+	 border-radius: 2.5px;
+	 border-bottom: 2.5px solid rgba(255,255,255,.7);
+
+}
+
+.absolute{ position: absolute; }
+
+.black{ background-color: #222; }
+
+.large-padding{ padding: 10px 15px; }
+
+.medium{ font-size: 1.5em; }
+
+.short{ font-size: .7em; }
+
+.bottom{ 
+	bottom: 0; 
+	left: 0;
+}
+
+#description ul{ margin: 0; }
+
+.topposs{ top: 0; }
+
+.full-width{ width: 100%; }
+
+.hidden{ display: none; }
+
+.food{ 
+	height: 300px; 
+	background-size: cover;
+	background-position: center;
+	padding: 0;
+	overflow: hidden;
+}
+
+.food:hover .screen{
+	top: -6.5%;
+}
+
+.food .screen{
+	background-color: rgba(0,0,0,.8);
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	border: 0;
+	position: relative;
+	top: -105%;
+	transition: top .4s;
+}
+
+#galeria{
+	width: 100%;
+	overflow-x: hidden;
+}
+
+#galeria .inner{ 
+	white-space: nowrap; 
+	position: relative;
+	left: 0%;
+	transition: left 1.5s ease;
+}
+
+#galeria .gallery{
+	background-size: cover;
+	background-position: center;
+	display: inline-block;
+	margin-right: -4px;
+	height: 100vh;
+	width: 100%;
+}
+
+.black-text{ color: #000; }
+
+.card{ 
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+	border-radius: 5px; 
+	/*margin-bottom: 400px;*/
+}
+
+.slim{ font-weight: 200; }
+
+.container .card{ 
+	padding: 2em; 
+	margin-top: -100px;
+}
+
+.white{ background-color: #fff; }
+
+#contact{
+	margin-top: -76px;
+}
+
+.step-form .step input, textarea{
+	font-size: 2em;
+	padding: 0.5em;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #eee;
+	background-color: transparent;
+	width: 100%;
+}
+
+.step-form{
+	border: none;
+	overflow: hidden;
+}
+
+.step-form .step{
+	max-height: 0;
+	border: none;
+	overflow: hidden;
+	transition: all 2s;
+	padding: 0;
+	margin: 0;
+}
+
+.step-form .step.active{
+	max-height: 150px;
+	padding: 1em .5em;
+}
+
+.path-step{
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 50%;
+	background-color: #a2a2a2;
+	margin-top: 2em;
+	opacity: .4s;
+	display: inline-block;
+	transition: all 0.4s;
+	cursor: pointer;
+}
+
+.path-step:hover{
+	box-shadow: 0px 0px 5px rgba(250, 250, 250, .8);
+	opacity: .9;
+}
+
+.path-step.active{
+	opacity: 1;
+	background-color: #fff;
+	box-shadow: 0px 0px 5px rgba(250, 250, 250, .8);
+}
+
+#location{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: -50px;
+}
+
+#map{
+	height: 500px;
+}
+
+#menu-open{ display: none; }
+
+@media only screen and (max-width: 960px){
+	#menu-open{ display: block; }
+
+	#responsive-nav ul{
+		position: absolute;
+		width: 100%;
+		font-size: 1.5em;
+		top: 80px;
+		background-color: #222;
+		left: 0px;
+		max-height: 0px;
+		overflow: hidden;
+		transition: all .4s;
+	}
+
+	#responsive-nav ul .active{
+		max-height: 80vh;
+	}
+
+	#responsive-nav ul li{
+		display: block;
+		margin-top: 1em;
+		padding: 10px 15px;
+		text-align: center;
+	}
+}
